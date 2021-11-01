@@ -5,7 +5,7 @@
   "main": "src/main.ts",
   "scripts": {
     "start": "ts-node ./src/main.ts",
-    "start:watch": "nodemon ./src/main.ts"
+    "start:watch": "nodemon --delay 500ms ./src/main.ts"
   },
   "repository": {
     "type": "git",
