@@ -1,10 +1,20 @@
 import express from 'express';
-import dotenv from 'dotenv';
+import logger from 'better-logging';
+require('dotenv').config();
 
-dotenv.config();
+import { PORT } from './constants';
+import { database } from './config/database';
 
-const app = express();
+const bootstrap = async () => {
+  logger(console);
 
-app.listen(Number(process.env.PORT), '0.0.0.0', () => {
-  console.log(`Listening at http://localhost:5000`);
-});
+  await database();
+
+  const app = express();
+
+  app.listen(PORT, '0.0.0.0', () => {
+    console.info(`Listening at http://localhost:${PORT}`);
+  });
+};
+
+bootstrap();
