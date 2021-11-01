@@ -1,0 +1,24 @@
+{
+  "name": "node-send-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angelmtztrc/node-send.git"
+  },
+  "keywords": [
+    "nodejs",
+    "typescript",
+    "express"
+  ],
+  "author": "Angel Martinez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/angelmtztrc/node-send/issues"
+  },
+  "homepage": "https://github.com/angelmtztrc/node-send#readme"
+}
